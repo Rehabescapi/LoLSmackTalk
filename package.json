@@ -1,0 +1,23 @@
+{
+  "name": "lolsmacktalk",
+  "version": "1.0.0",
+  "description": "lolapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rehabescapi/LoLSmackTalk.git"
+  },
+  "keywords": [
+    "Lol",
+    "API"
+  ],
+  "author": "Jason Lehmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rehabescapi/LoLSmackTalk/issues"
+  },
+  "homepage": "https://github.com/Rehabescapi/LoLSmackTalk#readme"
+}
