@@ -4,7 +4,8 @@
   "description": "lolapp",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start":"node buildscripts/server.js"
   },
   "repository": {
     "type": "git",
@@ -55,5 +56,10 @@
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
     "webpack-md5-hash": "0.0.5"
+  },
+  "dependencies": {
+    "jscs": "^3.0.7",
+    "jsonfile": "^3.0.0",
+    "lolapi": "^0.3.1"
   }
 }

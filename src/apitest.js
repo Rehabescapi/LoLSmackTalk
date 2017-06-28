@@ -1,7 +1,9 @@
 var fs = require('fs');
+var jsfile = require('jsonfile');
+
 var fd , key;
 
-fs.readFile('./api.txt','utf8', function (err, fd)  {
+fs.readFile('../keys/api.txt','utf8', function (err, fd)  {
 if (err) {
     if (err.code === 'ENOENT') {
       console.error('myfile does not exist');
@@ -11,9 +13,10 @@ if (err) {
     throw err;
   }
   key = fd;
-  
-  
   var lolapi = require('lolapi')(key, 'na');
+
+  
+  
 
 var summonerName = 'wickd';
 lolapi.Summoner.getByName(summonerName, function (error, summoner) {
@@ -34,8 +37,17 @@ lolapi.Summoner.getByName(summonerName, function (error, summoner) {
     if (error) throw error;
     // do something with runes
     console.log(runes);
-  })
-});
+
+    
+  });
+    
+      lolapi.Summoner.get(summonerId, function(error, data){
+          if(error) throw error;
+
+          var dd = JSON.stringify(data);
+          console.log(dd);
+        });
+    });
 
 });
 
