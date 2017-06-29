@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start":"node buildscripts/server.js"
+    "start": "node buildscripts/server.js"
   },
   "repository": {
     "type": "git",
@@ -58,8 +58,10 @@
     "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
+    "handlebars": "^4.0.10",
     "jscs": "^3.0.7",
     "jsonfile": "^3.0.0",
-    "lolapi": "^0.3.1"
+    "lolapi": "^0.3.1",
+    "nodemon": "^1.11.0"
   }
 }
